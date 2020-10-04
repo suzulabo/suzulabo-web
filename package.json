@@ -1,0 +1,17 @@
+{
+  "name": "suzulabo-profile",
+  "scripts": {
+    "task": "ts-node ./tasksfile.ts",
+    "gen": "npm run task generate"
+  },
+  "devDependencies": {
+    "@types/marked": "^1.1.0",
+    "@types/node": "^14.11.2",
+    "markdown-air": "0.0.4",
+    "marked": "^1.2.0",
+    "sass": "^1.26.11",
+    "tasksfile": "^5.1.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
