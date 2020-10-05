@@ -1,12 +1,16 @@
 @use 'node_modules/markdown-air/css/air.css';
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap');
+
+html {
+  font-size: 14px;
+}
 
 body {
   font-family: 'M PLUS Rounded 1c', Helvetica, sans-serif;
   max-width: 600px;
   text-align: start;
-  margin-bottom: 50px;
+  margin: 50px auto;
   padding: 10px;
+  background-color: #fcfffc;
 }
 
 body,
@@ -19,9 +23,10 @@ h1 {
 }
 
 .contact {
-  font-size: 30px;
+  font-size: 0;
   text-align: center;
   ion-icon {
+    font-size: 30px;
     margin: 0 20px;
   }
   a {
