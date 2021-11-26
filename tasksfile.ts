@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from 'fs';
-import marked from 'marked';
+import { html_beautify } from 'js-beautify';
+import { marked } from 'marked';
 import { renderSync } from 'sass';
 import { cli, sh } from 'tasksfile';
-import { html_beautify } from 'js-beautify';
 
 const fontURL =
   'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Open+Sans:wght@300&display=auto';
@@ -24,10 +24,7 @@ const genCSS = () => {
 
   const css = res.css
     .toString('utf8')
-    .replace(
-      'http://fonts.googleapis.com/css?family=Open+Sans:300italic,300',
-      fontURL
-    );
+    .replace('http://fonts.googleapis.com/css?family=Open+Sans:300italic,300', fontURL);
 
   writeFileSync('public/index.css', css, 'utf8');
 };
